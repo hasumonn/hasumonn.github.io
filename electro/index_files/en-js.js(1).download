@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["locale/widget/en-js"],{"m/mR":function(n,t,a){var e=Object.assign||function(n){for(var t=1;t<arguments.length;t++){var a=arguments[t];for(var e in a)Object.prototype.hasOwnProperty.call(a,e)&&(n[e]=a[e])}return n};n.exports={locale:"en",translations:e({},a("9CJR"),a("Y3gu")),reactIntlData:a("PTt1")}}}]);
+//# sourceMappingURL=en-js.js.map
