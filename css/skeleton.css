@@ -157,10 +157,20 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
+.outer-container-0 a {
+  color: var(--color-1);
+  text-decoration: none;
+  cursor: pointer;
+}
+.outer-container-0 a:hover {
+  color: var(--color-1); }
+
+.outer-container-1 a {
   color: var(--color-0);
-  text-decoration: none; }
-a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.outer-container-1 a:hover {
   color: var(--color-0); }
 
 
@@ -287,7 +297,7 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
+/* ul {
   list-style: circle inside; }
 ol {
   list-style: decimal inside; }
@@ -301,8 +311,15 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem; } */
 
+ol, ul {
+  margin-top: 0;
+}
+
+ul ul {
+  margin-bottom: 0;
+}
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -420,9 +437,9 @@ there.
 
 /* Custom */
 
-h2, h3, h4, h5 {
+/* h2, h3, h4, h5 {
   cursor: default;
-}
+} */
 
 :root {
   --chat-bubble-size: 12px;
@@ -624,6 +641,14 @@ a.button:hover {
     font-weight: 600;
 }
 
+.profile-pic-actual > img {
+  clip-path: circle(50%);
+  margin-left: 0;
+  margin-right: 0;
+  width: 160px;
+  z-index: 2;
+}
+
 .profile-pic {
   margin-left: 0;
   margin-right: 0;
@@ -764,54 +789,54 @@ a.button:hover {
 /* ACCESSIBLE VISUAL ARTS */
 .outer-container-1 .chat-item-container .visual-arts-item.chat-item-left, .outer-container-1 .chat-item-container .visual-arts-item.chat-item-right {
   color: var(--color-0);
-  background-color: #ffe8e2;
-  border-color: #ffe8e2;
+  background-color: #f5eccd;
+  border-color: #f5eccd;
 }
 .outer-container-1 .chat-item-container .visual-arts-item.chat-item-left:after {
-  border-color: transparent #ffe8e2 transparent transparent;
+  border-color: transparent #f5eccd transparent transparent;
 }
 .outer-container-1 .chat-item-container .visual-arts-item.chat-item-right:after {
-  border-color: transparent transparent transparent #ffe8e2;
+  border-color: transparent transparent transparent #f5eccd;
 }
 
 /* VOICE & AUDIO INTERACTION */
 .outer-container-1 .chat-item-container .voice-audio-item.chat-item-left, .outer-container-1 .chat-item-container .voice-audio-item.chat-item-right {
   color: var(--color-0);
-  background-color: #ffece0;
-  border-color: #ffece0;
+  background-color: #cfeed8;
+  border-color: #cfeed8;
 }
 .outer-container-1 .chat-item-container .voice-audio-item.chat-item-left:after {
-  border-color: transparent #ffece0 transparent transparent;
+  border-color: transparent #cfeed8 transparent transparent;
 
 }
 .outer-container-1 .chat-item-container .voice-audio-item.chat-item-right:after {
-  border-color: transparent transparent transparent #ffece0;
+  border-color: transparent transparent transparent #cfeed8;
 }
 
 /* INPUT ACCESSIBILITY */
 .outer-container-1 .chat-item-container .input-accessibility-item.chat-item-left, .outer-container-1 .chat-item-container .input-accessibility-item.chat-item-right {
   color: var(--color-0);
-  background-color: #e2ecd3;
-  border-color: #e2ecd3;
+  background-color: #d5e1e9;
+  border-color: #d5e1e9;
 }
 .outer-container-1 .chat-item-container .input-accessibility-item.chat-item-left:after {
-  border-color: transparent #e2ecd3 transparent transparent;
+  border-color: transparent #d5e1e9 transparent transparent;
 }
 .outer-container-1 .chat-item-container .input-accessibility-item.chat-item-right:after {
-  border-color: transparent transparent transparent #e2ecd3;
+  border-color: transparent transparent transparent #d5e1e9;
 }
 
 /* CUDDLEBIT */
 .outer-container-1 .chat-item-container .cuddlebit-item.chat-item-left, .outer-container-1 .chat-item-container .cuddlebit-item.chat-item-right {
   color: var(--color-0);
-  background-color: #d5e9e2;
-  border-color: #d5e9e2;
+  background-color: #e0e3ee;
+  border-color: #e0e3ee;
 }
 .outer-container-1 .chat-item-container .cuddlebit-item.chat-item-left:after {
-  border-color: transparent #d5e9e2 transparent transparent;
+  border-color: transparent #e0e3ee transparent transparent;
 }
 .outer-container-1 .chat-item-container .cuddlebit-item.chat-item-right:after {
-  border-color: transparent transparent transparent #d5e9e2;
+  border-color: transparent transparent transparent #e0e3ee;
 }
 
 /* MIXED REALITY USABILITY */
@@ -825,6 +850,19 @@ a.button:hover {
 }
 .outer-container-1 .chat-item-container .mixed-reality-usability-item.chat-item-right:after {
   border-color: transparent transparent transparent #e0e3ee;
+}
+
+/* OTHER */
+.outer-container-1 .chat-item-container .other-item.chat-item-left, .outer-container-1 .chat-item-container .other-item.chat-item-right {
+  color: var(--color-0);
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+}
+.outer-container-1 .chat-item-container .other-item.chat-item-left:after {
+  border-color: transparent #e4e4e4 transparent transparent;
+}
+.outer-container-1 .chat-item-container .other-item.chat-item-right:after {
+  border-color: transparent transparent transparent #e4e4e4;
 }
 
 .outer-container-1 .chat-item-container:hover .chat-item-left, .outer-container-1 .chat-item-container:hover .chat-item-right {

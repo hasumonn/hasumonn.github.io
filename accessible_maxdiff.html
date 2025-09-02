@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>lotus - Accessible Re-design of MaxDiff Survey</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="audio.js" defer></script> -->
+</head>
+<body>
+
+  <div class="outer-container-0">
+
+    <div class="container">
+      <div style="height: 25px"></div>
+
+      <div class="row small">
+        <div class="one-half column">
+          <!-- <h5>Research + Design</h5> -->
+          <h2><strong><a href="index.html">LOTUS</strong> ZHANG</a></h2>
+        </div>
+        <div class="one-half column">
+          <a class="button right" href="lotus-resume.pdf">resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="outer-container-1">
+    <div class="container">
+
+      <div style="height: 50px"></div>
+
+      <h2>Accessible Re-design of MaxDiff Survey</h2>
+      <p>
+        <b>Role:</b> UX Research Intern at Google (Products for All)<br>
+        <b>Methods:</b> Survey, accessibility testing, experimental design, mixed-method evaluation<br>
+        <b>Impact:</b> Findings adopted into Google’s company-wide UXR handbook<br>
+      </p>
+      <br>
+
+      <h4>Overview</h4>
+      <p>Google’s UX researchers often rely on MaxDiff surveys to prioritize product features. While statistically powerful, this method creates significant accessibility barriers for blind and low-vision (BLV) users. During my internship, I researched the plausbility of adapting and simplifying traditional MaxDiff to reduce accessibility challenges while still producing rigorous, actionable insights. By combining qualitative usability study sessions, cognitive interviews, a large-scale survey experiment, I demonstrated that a simplified MaxDiff version - best-only MaxDiff - can both improve accessibility and maintain the methodological rigor product teams rely on.</p>
+      <br>
+
+      <h4>The Challenge</h4>
+      <ul>
+      <li><b>For users:</b> Traditional MaxDiff requires selecting both the “best” and “worst” items in a matrix format. This layout is cognitively taxing and difficult to navigate with screen-readers / magnifiers, leading to confusion, frustration, and incomplete responses.</li>
+      <li><b>For teams:</b> Inaccessible surveys exclude key user groups, lowering data quality and leaving product decisions less representative. Researchers needed a method that maintained rigor and worked for diverse participants.</li>
+      </ul>
+
+      <img src="images/fig1.png" width="90%" style="display: block; margin: 0 auto; border: 10px solid white;" alt='This figure shows an example BWS question on the left side and an example BOS question on the right side. The BWS question asks: "Consider the following possible features to improve your experience on platform X, what are the most and least important features to you?" with a three-column, five-row matrix to indicate possible answer options: in the central column are Feature A, Feature B, Feature C, Feature D, and Feature E; the left column has a header "Most Important", and the right column has a header "Least Important", both containing radio buttons for respondents to indicate a most or least important feature. The BOS question asks: "Consider the following possible features to improve your experience on platform X, what is the most important feature to you?" with five radio button choices: Feature A, Feature B, Feature C, Feature D, and Feature E.'>
+      <br>
+      <div style="text-align: center; font-size: 0.9em;"><i>Example question for traditional MaxDiff or best-worst scaling (left) and best-only scaling (right)</i></div>
+      <br><br>
+
+      <h4>My Approach</h4>
+      <p>I designed a three-part research agenda that evaluate BOS in real-world conditions and also helps an anonymous product team to better understand preferences of its disability user base. Each phase was chosen to balance depth, scalability, and methodological rigor:
+      <ol>
+        <li><b>Qualitative Pre-Test (BLV Users):</b>
+          <ul>
+            <li><i>Why:</i> We started small (8 participants) to capture rich, firsthand feedback before scaling up. This ensured we understood accessibility pain points and usability improvements early.</li>
+            <li><i>How:</i> 90-minute qualitative, cognitive interview sessions comparing BOS vs BWS, capturing both navigation challenges and clarity of instructions.</li>
+          </ul>
+        </li>
+        <li><b>Large-Scale Survey (BLV Users):</b>
+          <ul>
+            <li><i>Why:</i> To validate BOS’s performance under typical industry conditions. MaxDiff is valued for its statistical precision at scale; we needed to see if BOS could replicate that.</li>
+            <li><i>How:</i> Recruited 535 BLV respondents to complete BOS on 30 product features. Measured both experience (accessibility, mental demand, focus) and preference rankings.</li>
+          </ul>
+        </li>
+        <li><b>Survey Experiment (DHH Users):</b>
+          <ul>
+            <li><i>Why:</i> We wanted to benchmark BOS against BWS with a user group that could access both survey versions. </li>
+            <li><i>How:</i> Random assignment to BOS vs BWS conditions. Splitting DHH respondents between BOS and BWS let us compare rankings head-to-head. Descrpitive and correlation analysis of resulting rankings.</li>
+          </ul>
+        </li>
+      </ol>
+      <br>
+
+      <h4>Key Findings</h4>
+      <ul>
+        <li><b>Accessibility:</b> All BLV pre-testers considered BOS more accessible. Screen-reader users called BWS “frustrating,” while BOS was “straightforward” and “less overwhelming.”</li>
+        <li><b>Clarity:</b> Participants reported BOS required less effort and reduced cognitive load - an important factor for survey engagement.</li>
+        <li><b>Validation at Scale:</b> With 535 BLV respondents, BOS produced clear top feature rankings with non-overlapping confidence intervals, showing that simplified input still yielded actionable results.</li>
+        <li><b>Experimental Evidence:</b> Among DHH respondents, BOS and BWS rankings were highly correlated, reinforcing BOS’s capability to deliver results comparable to MaxDiff.</li>
+        <li><b>Broader Potential:</b> Because BOS reduces complexity while maintaining rigor, it could also benefit people with cognitive disabilities or teams working under tight timelines and limited resources.</li>
+      </ul>
+      <br>
+
+      <h4>Impact</h4>
+      <ul>
+        <li><b>For product team PMs:</b> Findings informed feature prioritization discussions and demonstrated that inclusivity does not require sacrificing rigor.</li>
+        <li><b>For Google UXR:</b> BOS was formally documented in the company-wide UXR handbook for accessibility-sensitive surveys.</li>
+        <li><b>For the field:</b> Provided one of the first large-scale validations of an accessible MaxDiff alternative, sparking discussions about inclusive methodology.</li>
+      </ul>
+      <br>
+
+      <h4>Reflection</h4>
+      Through this project, I learned how to:
+      <ul>
+        <li>Evaluate new methods with both qualitative depth and quantitative scale.</li>
+        <li>Make intentional design trade-offs (rigor vs accessibility, precision vs inclusivity).</li>
+        <li>Communicate findings in a way that resonates with both researchers and PMs - showing not just what we found, but why the approach matters.</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div id="screen-overlay"></div>
+
+  <script type="text/javascript">
+    /*
+    * Replace all SVG images with inline SVG
+    */
+    jQuery('img.svg').each(function(){
+      var $img = jQuery(this);
+      var imgID = $img.attr('id');
+      var imgClass = $img.attr('class');
+      var imgURL = $img.attr('src');
+
+      jQuery.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Add replaced image's ID to the new SVG
+          if(typeof imgID !== 'undefined') {
+              $svg = $svg.attr('id', imgID);
+          }
+          // Add replaced image's classes to the new SVG
+          if(typeof imgClass !== 'undefined') {
+              $svg = $svg.attr('class', imgClass+' replaced-svg');
+          }
+
+          // Remove any invalid XML tags as per http://validator.w3.org
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+          if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+              $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+          }
+
+          $svg.attr('preserveAspectRatio', 'xMinYMin');
+
+          // Replace image with new SVG
+          $img.replaceWith($svg);
+
+      }, 'xml');
+    });
+
+    $(document).ready(function() {
+      $('#screen-overlay').addClass('hidden');
+    });
+  </script>
+
+</body>
+
+</html>

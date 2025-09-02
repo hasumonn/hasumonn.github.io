@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>lotus - Access to Visual Arts for Blind Patrons</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="audio.js" defer></script> -->
+</head>
+<body>
+
+  <div class="outer-container-0">
+
+    <div class="container">
+      <div style="height: 25px"></div>
+
+      <div class="row small">
+        <div class="one-half column">
+          <!-- <h5>Research + Design</h5> -->
+          <h2><strong><a href="index.html">LOTUS</strong> ZHANG</a></h2>
+        </div>
+        <div class="one-half column">
+          <a class="button right" href="lotus-resume.pdf">resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="outer-container-1">
+    <div class="container">
+
+      <div style="height: 50px"></div>
+
+      <h2>Access to Visual Arts for Blind Patrons</h2>
+      <p>
+        <b>Role:</b> Co-Lead - project planning, survey design, execution, analysis, and writing<br>
+        <b>Methods:</b> 15 semi-structured interviews, follow-up survey with 220 blind patrons<br>
+        <b>Impact:</b> Actionable design insights for museums, cultural institutions, and accessibility technology developers<br>
+      </p>
+      <br>
+
+      <h4>Overview</h4>
+      <p>Access to visual arts often stops at compliance: audio guides, tactile graphics, or guided tours. But for Blind and low-vision (BLV) patrons, these approaches don’t always align with their motivations - whether aesthetic enjoyment, social connection, or cultural activism. Museums and tech providers lacked evidence on how BLV patrons actually experience art and what kinds of access they prefer.</p>
+
+      <img src="images/fig6.jpg" width="90%" style="display: block; margin: 0 auto;" alt="This figure shows a person is touching the tactile art piece with two hands. There are two faces in the tactile art piece, the left face is a man's face, and the right face is a carved face of a woman.">
+      <br>
+      <div style="text-align: center; font-size: 0.9em;"><i>A participant is touching the tactile art piece that was made by an artist to recall his wife who had passed away.</i></div>
+      <br><br>
+
+      <h4>Approach</h4>
+      As co-lead, I helped design a two-phase study to balance depth and generalizability:
+      <ol>
+        <li><b>Interviews (15 BLV patrons):</b> To uncover lived experiences and generate design considerations.</li>
+        <li><b>Survey (220 BLV patrons):</b> To measure preferences across access methods and design factors (e.g., tactile vs. audio, layered descriptions, social settings) and examine how vision level and blindness onset shape those preferences.</li>
+      </ol>
+      <p>This approach allowed us to both <b>surface new design principles</b> and <b>validate which were most widely needed</b>.</p>
+      <br>
+
+      <h4>Key Insights & Industry Impact</h4>
+      <ul>
+        <li>BLV patrons seek more than factual access - they value <b>aesthetic richness, layered stories, and social inclusion.</b></li>
+        <li>Survey data showed strong preferences for <b>tactile access</b> (especially among congenitally blind) and <b>layered multimodal options</b> (audio + tactile).</li>
+        <li>Eight concrete design considerations emerged, including standards for descriptions, destigmatizing tactile exploration, and improving synchronous feedback.</li>
+        <li><b>Industry relevance:</b> These insights guide museums and technology providers to move beyond compliance toward <b>scalable, multimodal, and engaging access solutions.</b></li>
+      </ul>
+      <br>
+
+      Published at <a href="https://dl.acm.org/doi/full/10.1145/3544548.3580941"><u>CHI ’23</u></a>, this work is already informing cultural institutions exploring next-generation accessibility experiences.
+
+      <div style="height: 50px"></div>
+
+    </div>
+  </div>
+
+
+  <div id="screen-overlay"></div>
+
+  <script type="text/javascript">
+    /*
+    * Replace all SVG images with inline SVG
+    */
+    jQuery('img.svg').each(function(){
+      var $img = jQuery(this);
+      var imgID = $img.attr('id');
+      var imgClass = $img.attr('class');
+      var imgURL = $img.attr('src');
+
+      jQuery.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Add replaced image's ID to the new SVG
+          if(typeof imgID !== 'undefined') {
+              $svg = $svg.attr('id', imgID);
+          }
+          // Add replaced image's classes to the new SVG
+          if(typeof imgClass !== 'undefined') {
+              $svg = $svg.attr('class', imgClass+' replaced-svg');
+          }
+
+          // Remove any invalid XML tags as per http://validator.w3.org
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+          if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+              $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+          }
+
+          $svg.attr('preserveAspectRatio', 'xMinYMin');
+
+          // Replace image with new SVG
+          $img.replaceWith($svg);
+
+      }, 'xml');
+    });
+
+    $(document).ready(function() {
+      $('#screen-overlay').addClass('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
